@@ -6,14 +6,15 @@ import java.lang.*;
 public class Frases {
 	public static void main(String[] args) {
 		String [] frases = new String [4];
-		frases = devolverFrases(frases); //cargo el arreglo con 4 frases
-		verificarFrases (frases); //Verifico cada frase y devuelvo lo solicitado por el enunciado
+		frases = devolverFrases(frases); 
+		verificarFrases (frases); 
 		
 
 	
 	
 
 }
+	//Funcion para verificar cada frase segun el enunciado y mostrar por pantalla los resultados
 	public static void verificarFrases (String [] fr) {
 		for (String f:fr) {
 			//f.replace("a", "x");
@@ -44,7 +45,7 @@ public class Frases {
 		}
 		
 	}
-	
+	//Funcion para cargar frases en el arreglo
 	public static String[] devolverFrases (String [] fr) {
 		for (int i=0; i<fr.length; i++) {
 			@SuppressWarnings("resource")
